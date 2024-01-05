@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the characters used -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Sets initial viewport width to the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS links + js -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Window icon and page name -->
+    <link rel="icon" href="images/N.png" />
+    <title>Nate - Nathaniel</title>
+    <meta
+      name="google-site-verification"
+      content="NZ9hajb2uj2-bzEXe8XrUkkC6BqXjoWt4JJParAZFaM"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1J9BRPBNLL"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-1J9BRPBNLL");
+  </script>
+  <body>
+    <!-- Navigation bar, style.css -->
+    <div class="nav">
+      <a href="index.html" class="desktop-logo">
+        <img class="logo" src="images/N_2.png" alt="Logo" />
+      </a>
+      <a href="code.html" class="hover">coding</a>
+      <a href="graphic.html" class="hover">graphic</a>
+      <a href="video.html" class="hover">video</a>
+      <a href="photo.html" class="hover">photo</a>
+      <a href="aboutme.html" class="hover">about me</a>
+    </div>
+    <!-- Top Navigation Menu -->
+    <div class="m-nav">
+      <a href="index.html" class="mobile-logo">
+        <img class="logo" src="images/N_2.png" alt="Logo" />
+      </a>
+      <div id="myLinks">
+        <a href="code.html" class="hover">code</a>
+        <a href="graphic.html" class="hover">graphic</a>
+        <a href="video.html" class="hover">video</a>
+        <a href="photo.html" class="hover">photo</a>
+        <a href="aboutme.html" class="hover">about me</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Part 1 - front hero-image with text -->
+    <div class="hero-image hero-image-1">
+      <div class="text-container">
+        <p id="intro">Hello, I am</p>
+        <h1>
+          Nathaniel Bjerke-Kildal <br />
+          aka. Nate
+        </h1>
+        <p id="intro2">welcome to my little corner of the interntent</p>
+        <!-- CV BUTTONS, code in js/script.js and index.css -->
+        <button onclick="openCVInNewTab()">Get my CV</button>
+        <!-- Download icon to CV  -->
+        <a href="Nathaniel_CV_EN.pdf" download>
+          <button class="btn" id="download-button">
+            <i class="fa fa-download"></i>
+          </button>
+        </a>
+      </div>
+      <!-- <div class="picture-text-hero-image">Foto: Me</div> -->
+    </div>
+    <!-- My lates project -->
+    <div class="container">
+      <div class="textbox">
+        <div class="latescode">
+          <h2>Developer?</h2>
+          <p>I am focing on</p>
+          <p>
+            <br />
+          </p>
+          <p>Learn more here:</p>
+          <button onclick="openCodePage()">Learn more here</button>
+        </div>
+      </div>
+      <div class="textbox">
+        <!-- Left part of "My latest project" -->
+        <div class="image-container">
+          <img src="/images/Drawing_app.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="hero-image-2 hero-image">
+      <div class="aboutme">
+        <p>
+          Greetings! I am Nathaniel, a 21-year-old student from Norway. My
+          curiosity knows no bounds so I am exploring a bit about everything at
+          the moment, with a big cunch programing :D
+        </p>
+        <!-- CV BUTTONS, code in js/script.js and index.css -->
+        <button onclick="openAboutMePage()">About me</button>
+      </div>
+      <div class="picture-text-hero-image">Photo: Private</div>
+    </div>
+
+    <!-- Student and work -->
+    <div class="container">
+      <div class="textbox">
+        <h2>Education</h2>
+        <p class="year">2022-2025:</p>
+        <p class="degree">
+          OSLOMET, Information technology - Bachelor's Degree Programme
+        </p>
+        <p>
+          <a
+            href="https://www.oslomet.no/studier/tkd/informasjonsteknologi"
+            target="”_blank”"
+            >Information technology</a
+          >
+          is OsloMet’s most comprehensive education in data where we study
+          broadly and deeply in the field of design, development, administration
+          and maintenance of computer systems.
+        </p>
+        <br />
+        <p class="year">2021-2025:</p>
+        <p class="degree">Lillestrøm VGS, Communication and Media Studies</p>
+        <p>
+          During my time at Lillestrøm VGS, I studied
+          <a
+            href="https://viken.no/lillestrom-vgs/utdanningstilbud/medier-og-kommunikasjon/"
+            target="”_blank”"
+            >"Media and Communication"</a
+          >
+          (Medier og Kommunikasjon) and R1 Mathematics.
+        </p>
+        <p>
+          My time at Lillestrøm VGS presented a valuable opportunity for
+          personal growth and sparked my interest in art, digital design and
+          mathematics.
+        </p>
+      </div>
+      <!-- WORK-->
+      <div class="textbox">
+        <!-- workspace for the artistic side of me -->
+        <div id="workspace"></div>
+        <h2>Work</h2>
+        <p class="year">OCT 2022-NOW:</p>
+        <p class="degree">
+          Media and Communication substitute teacher, Lillestrøm VGS
+        </p>
+        <p>
+          Upon graduating from Lillestrøm Upper Secondary School (VGS), I had
+          the opportunity to work here as a substitute teacher. I covered a
+          graphics teacher for a few months, as well as other classes. Started
+          own pedagogical projects regarding animation.
+        </p>
+        <p>
+          I am also call in substetute when needed in other classes as well,
+          such as math and history
+        </p>
+        <br />
+        <p class="year">NOV 2023 - DEC 2023:</p>
+        <p class="degree">
+          Digital Content Internship, Keystone Education Group
+        </p>
+        <p>Focused mostly on research and writing web articles</p>
+        <br />
+        <p class="year">APR 2023 - JUL 2023:</p>
+        <p class="degree">
+          Junior Community Moderator, Star Stable Entertainment AB
+        </p>
+        <p>
+          I worked with social media, moderation, engagement, and in-game
+          events. I also started projects that worked with a new in-game
+          function and participated in helping with a new social media platform.
+        </p>
+        <br />
+        <p class="year">JUL 2020 - APR 2023:</p>
+        <p class="degree">OBS, Shop employee</p>
+        <p>
+          Great first job experience. I focus on customer service and sales and
+          also developed my ability to work effectively in a busy work
+          environment.
+        </p>
+      </div>
+    </div>
+    <!-- SKILL -->
+    <div class="container">
+      <div class="textbox">
+        <div class="wrapper skill">
+          <h2>this and...</h2>
+          <!-- Code for skill 1 -->
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="I have over 5 years of experience working with various Adobe programs. 
+              During my time at VGS, I utilized Adobe tools for 3 years and also provided technical support for 
+              the software as a substitute teacher. This is mainly: After Effects, Photoshop, Premiere Pro, 
+              InDesign, Illustrator, and Lightroom."
+            >
+              ADOBE CREATIVE CLOUD
+            </p>
+            <div class="skill-bar skill1"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="After completing my cours 'Web development and inclusive design' I feel comfortable with basic website design and have gained enough knowledge to continue learning and expanding my skills."
+            >
+              HTML & CSS
+            </p>
+            <div class="skill-bar skill2"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="With 2 courses focusing on Java and Webprograming have I spaked a big intres in programing, and know the basic regarding webprograming."
+            >
+              JAVA AND WEBPROGRAMING
+            </p>
+            <div class="skill-bar skill3"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="In school, I had the opportunity to work with both MariaDB and MySQLWorkbench, and the experience was truly fantastic."
+            >
+              SQL & DATABASES
+            </p>
+            <div class="skill-bar skill4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="textbox">
+        <div class="wrapper skill">
+          <h2>that</h2>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="Having worked for Star Stable Entertainment, I have gained valuable experience in working with diverse communities, 
+              both on social media and within the in-game environment."
+            >
+              COMUNITY MODERATING
+            </p>
+            <div class="skill-bar skill5"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="I have worked with Social Media both professional and personal."
+            >
+              SOSIAL MEDIA
+            </p>
+            <div class="skill-bar skill6"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="Work and personal experience in content creating."
+            >
+              CONTENT CREATING
+            </p>
+            <div class="skill-bar skill7"></div>
+          </div>
+          <div class="skill">
+            <p
+              class="skill-name"
+              data-tooltip="As a dedicated coffee enthusiast, I have many years of experience with drinking coffee."
+            >
+              COFFEE
+            </p>
+            <div class="skill-bar skill8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD GRID SYSTEM -->
+    <div class="container">
+      <div class="card-container">
+        <a href="code.html" class="card">
+          <div
+            class="card-image"
+            style="background-image: url('/images/graphic/image_001.png')"
+          ></div>
+          <div class="card-text">
+            <h2>Coding</h2>
+            <p>Some coding projects (not online yet)</p>
+          </div>
+        </a>
+        <a href="graphic.html" class="card">
+          <div
+            class="card-image"
+            style="background-image: url('images/graphic/IG.jpg')"
+          ></div>
+          <div class="card-text">
+            <h2>Graphic</h2>
+            <p>Graphic design pieces and drawings in recent years.</p>
+          </div>
+        </a>
+        <a href="video.html" class="card">
+          <div
+            class="card-image"
+            style="background-image: url('/video/cover/Vindstille_cover.png')"
+          ></div>
+          <div class="card-text">
+            <h2>Video</h2>
+            <p>Some video projects over the past few years</p>
+          </div>
+        </a>
+        <a href="photo.html" class="card">
+          <div
+            class="card-image"
+            style="background-image: url('images/photo.png')"
+          ></div>
+          <div class="card-text">
+            <h2>Photo</h2>
+            <p>Some photo as well as in-game photos, editing and more!</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Footer, code instyle.css -->
+    <footer>
+      <div class="footer-boxes">
+        <div class="individual-boxes">
+          <img src="images/N_2.png" alt="62 Logo" />
+          <p>Nathaniel Bjerke-Kildal</p>
+        </div>
+        <div class="individual-boxes contact-info">
+          <p>
+            Contact me at:<br />
+            <span class="contact">+47 95 41 27 21</span><br />
+            <a href="mailto:contact@natee.no" class="contact"
+              >contact@natee.no</a
+            >
+            or<br />
+            <a href="mailto:nathaniel.bjerke.kildal@gmail.com" class="contact"
+              >nathaniel.bjerke.kildal@gmail.com</a
+            ><br />
+            Lillestrøm 2000, Norway
+          </p>
+        </div>
+        <div class="individual-boxes social-media">
+          <p>Social media:</p>
+          <ul class="social-media-list">
+            <!-- LinkedIn-->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nathaniel-bjerke-kildal-6aa916266"
+                class="social-icon"
+                target="”_blank”"
+                ><img src="/images/icon/linkedin_icon.png" alt="Instagram icon"
+              /></a>
+            </li>
+            <!-- Github-->
+            <li>
+              <a
+                href="https://github.com/nathanielbk"
+                class="social-icon"
+                target="”_blank”"
+                ><img src="/images/icon/github.png" alt="Instagram"
+              /></a>
+            </li>
+            <!-- Instagram-->
+            <li>
+              <a
+                href="https://www.instagram.com/nathaniel.bjerke.kildal"
+                class="social-icon"
+                target="”_blank”"
+                ><img src="/images/icon/IG_icon.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Nate(e)</p>
+      </div>
+    </footer>
+  </body>
+</html>
